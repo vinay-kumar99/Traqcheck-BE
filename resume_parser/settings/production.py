@@ -9,7 +9,7 @@ import os
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://traqcheck-be.onrender.com']
 
 if not ALLOWED_HOSTS:
     raise ValueError("ALLOWED_HOSTS must be set in production!")
