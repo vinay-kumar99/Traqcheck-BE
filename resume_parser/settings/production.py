@@ -18,7 +18,7 @@ if not ALLOWED_HOSTS:
 
 # Production CORS settings (strict)
 CORS_ALLOW_ALL_ORIGINS = False
-CORS_ALLOWED_ORIGINS = ['traqcheck-fe.vercel.app']
+CORS_ALLOWED_ORIGINS = ['https://traqcheck-fe.vercel.app']
 
 if not CORS_ALLOWED_ORIGINS:
     raise ValueError("CORS_ALLOWED_ORIGINS must be set in production!")
