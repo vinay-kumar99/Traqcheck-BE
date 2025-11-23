@@ -9,7 +9,7 @@ import os
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=True, cast=bool)
 
-ALLOWED_HOSTS = ['https://traqcheck-be.onrender.com']
+ALLOWED_HOSTS = ['traqcheck-be.onrender.com']
 
 if not ALLOWED_HOSTS:
     raise ValueError("ALLOWED_HOSTS must be set in production!")
@@ -18,7 +18,7 @@ if not ALLOWED_HOSTS:
 
 # Production CORS settings (strict)
 CORS_ALLOW_ALL_ORIGINS = False
-CORS_ALLOWED_ORIGINS = ['https://traqcheck-fe.vercel.app']
+CORS_ALLOWED_ORIGINS = ['traqcheck-fe.vercel.app']
 
 if not CORS_ALLOWED_ORIGINS:
     raise ValueError("CORS_ALLOWED_ORIGINS must be set in production!")
